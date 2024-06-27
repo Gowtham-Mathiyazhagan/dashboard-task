@@ -1,0 +1,52 @@
+/* ---------- *\
+ font imported
+\* ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* ---------- *\
+ Reset style
+\* ---------- */
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,input,button,span{
+  display: block;
+}
+
+/* ---------- *\
+ common style
+\* ---------- */
+
+html {
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* ---------- *\
+ :root style
+\* ---------- */
+
+:root {
+  /* color */
+
+  --dark-blue: rgb(93, 135, 255);
+  --sky-blue: rgb(73, 190, 255);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --text: rgb(42, 53, 71);
+  --hover: rgb(236, 242, 255);
+}
