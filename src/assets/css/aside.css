@@ -26,12 +26,21 @@
   text-transform: capitalize;
   margin: 0 auto;
   letter-spacing: 1px;
-  border-radius: 10px;
+  border-radius: 6px;
   color: var(--black);
   transition: 0.2s ease-in-out;
+  margin-bottom: 2px;
 }
 
 .products > .product a:hover {
+  background-color: var(--hover);
+  color: var(--dark-blue);
+}
+
+a.active {
   background-color: var(--dark-blue);
-  color: var(--white);
+  color: var(--white) !important;
+}
+.products > .product a.active:hover {
+  background-color: var(--dark-blue);
 }
