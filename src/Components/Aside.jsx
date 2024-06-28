@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../assets/css/aside.css";
 
 const Aside = () => {
-  const [active, setActive] = useState(null)
+  const [active, setActive] = useState(1)
   const handleClick = (e) => {
     if (e.target.tagName === "A") {
    setActive(Number(e.target.className))
