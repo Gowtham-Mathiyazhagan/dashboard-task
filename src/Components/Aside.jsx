@@ -1,13 +1,9 @@
 import React from "react";
-import WebTitle from "../assets/images/WebTitle";
 import "../assets/css/aside.css";
 
 const Aside = () => {
   return (
     <aside className="aside-container">
-      <header className="header">
-        <WebTitle />
-      </header>
       <ul className="products">
         <li className="title">
           <h4>home</h4>
