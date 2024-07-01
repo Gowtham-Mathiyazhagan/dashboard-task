@@ -9,6 +9,7 @@
   position: fixed;
   top: 0;
   right: 0;
+  background-color: var(--white);
 }
 
 .navbar-container .title {
