@@ -1,0 +1,57 @@
+.navbar-container {
+  height: 4rem;
+  width: calc(100% - 13rem );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: nav;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.navbar-container .title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+.navbar-container .input {
+  height: 70%;
+  width: 60%;
+  background-color: var(--hover);
+  border-radius: 0.5rem;
+  display: flex;
+  overflow: hidden;
+  padding: 0 1.4rem;
+  font-size: 0.9rem;
+
+}
+
+.input input,
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.input input {
+  flex-grow: 5;
+  outline: none;
+  font-size: inherit;
+}
+
+.input input::placeholder {
+  font-size: inherit;
+}
+
+.input button {
+  flex-grow: 1;
+  -webkit-text-stroke: 1px;
+}
+
+.input button i {
+  font-size: 1.1rem;
+  float: right;
+  cursor: pointer;
+}
