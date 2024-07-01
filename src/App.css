@@ -49,6 +49,7 @@ html {
   --black: rgb(0, 0, 0);
   --text: rgb(42, 53, 71);
   --hover: rgb(236, 242, 255);
+  --light-gray: rgb(204, 203, 203);
 }
 
 main{
@@ -60,6 +61,4 @@ main{
   grid-template-columns:13rem 1fr 1fr ;
   grid-template-rows: 4rem 1fr;
 }
-
-body{
-}
+ 

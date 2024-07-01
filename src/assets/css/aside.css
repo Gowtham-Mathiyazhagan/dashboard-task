@@ -5,9 +5,10 @@
   flex-direction: column;
   padding: 10px;
   justify-content: space-evenly;
-  border-right: 1px solid rgb(204, 203, 203);
+  border-right: 1px solid var(--light-gray);
 position: fixed;
 left: 0;
+grid-area: aside;
 }
 
 .aside-container .products {
@@ -21,7 +22,7 @@ left: 0;
   text-transform: uppercase;
 }
 
-.products > .product a {
+.products  .product a{
   width: 170px;
   padding: 9px 0 9px 12px;
   font-size: 0.8rem;
@@ -32,6 +33,12 @@ left: 0;
   color: var(--black);
   transition: 0.2s ease-in-out;
   margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.products  .product .link{
+  text-decoration: none;
+  padding: 0;
 }
 
 .products > .product a:hover {
