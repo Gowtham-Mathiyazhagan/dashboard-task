@@ -50,3 +50,16 @@ html {
   --text: rgb(42, 53, 71);
   --hover: rgb(236, 242, 255);
 }
+
+main{
+  display: grid;
+  grid-template-areas: 
+  "aside nav nav"
+  "aside content content"
+  ;
+  grid-template-columns:13rem 1fr 1fr ;
+  grid-template-rows: 4rem 1fr;
+}
+
+body{
+}
