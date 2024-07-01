@@ -6,6 +6,8 @@
   padding: 10px;
   justify-content: space-evenly;
   border-right: 1px solid rgb(204, 203, 203);
+position: fixed;
+left: 0;
 }
 
 .aside-container .products {
@@ -44,3 +46,4 @@ a.active {
 .products > .product a.active:hover {
   background-color: var(--dark-blue);
 }
+
