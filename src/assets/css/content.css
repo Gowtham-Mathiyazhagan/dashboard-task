@@ -16,7 +16,6 @@
 .about-container .items .item {
   height: 11rem;
   width: 10rem;
-  background-color: aqua;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

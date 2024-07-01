@@ -99,7 +99,7 @@ const About = () => {
       <ul className="items">
         <li
           className="item"
-          style={{ backgroundColor: "#eff6ff", color: "var(--dark-blue)" }}
+          style={{ backgroundColor: "#eff6ff", color: "#2563eb" }}
         >
           <figure>
             <img src={pesron} alt="#" />
@@ -123,7 +123,7 @@ const About = () => {
         </li>
         <li
           className="item"
-          style={{ backgroundColor: "var(--hover)", color: "var(--sky-blue)" }}
+          style={{ backgroundColor: "#e0f2fe", color: "var(--sky-blue)" }}
         >
           <figure>
             <img src={mailbox} alt="#" />
@@ -159,7 +159,7 @@ const About = () => {
         </li>
         <li
           className="item"
-          style={{ backgroundColor: "#eff6ff", color: "var(--dark-blue)" }}
+          style={{ backgroundColor: "#eff6ff", color: "#2563eb" }}
         >
           <figure>
             <img src={connect} alt="#" />

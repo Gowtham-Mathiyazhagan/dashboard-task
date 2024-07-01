@@ -43,12 +43,12 @@ html {
 :root {
   /* color */
 
-  --dark-blue: rgb(93, 135, 255);
+  --dark-blue:rgb(217, 70, 239);
   --sky-blue: rgb(73, 190, 255);
   --white: rgb(255, 255, 255);
   --black: rgb(0, 0, 0);
   --text: rgb(42, 53, 71);
-  --hover: rgb(236, 242, 255);
+  --hover: rgb(245, 208, 254);
   --light-gray: rgb(204, 203, 203);
 }
 

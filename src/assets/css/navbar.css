@@ -21,7 +21,7 @@
 .navbar-container .input {
   height: 70%;
   width: 60%;
-  background-color: var(--hover);
+  background-color: rgb(217, 70, 239,.1);
   border-radius: 0.5rem;
   display: flex;
   overflow: hidden;
