@@ -1,16 +1,71 @@
 .navbar-container {
   height: 4rem;
-  width: calc(100% - 13rem );
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  grid-area: nav;
-  padding: 0 20px;
+  padding: 0 40px 0 50px;
   position: fixed;
   top: 0;
   right: 0;
-  background-color: var(--white);
+  background-color: var(--dark-blue);
+  color: var(--white);
+  z-index: 1;
 }
+
+/* toggle */
+
+.toggle {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  box-shadow: 0 0px 5px rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.toggle span {
+  position: absolute;
+  height: 2.5px;
+  width: 20px;
+  background-color: var(--dark-blue);
+  border-radius: 15px;
+  transition: 0.65s;
+}
+
+.toggle span:nth-child(1) {
+  width: 10px;
+  transform: translateY(-7px);  
+  left: 7.5px;
+}
+.toggle.active span:nth-child(1) {
+  width: 20px;
+  transform: translateY(0px) rotate(45deg);
+  transition-delay: 0.100s;
+}
+.toggle span:nth-child(2) {
+  width: 15px;
+  transform: translateY(7px);
+  left: 7.5px;
+}
+
+.toggle.active span:nth-child(2) {
+  width: 20px;
+  transform: translateY(0px) rotate(315deg);
+  transition-delay: 0.15s;
+}
+
+.toggle.active span:nth-child(3) {
+  transform: translateX(50px);
+}
+
+/* toggle end */
 
 .navbar-container .title {
   font-size: 2rem;
@@ -19,9 +74,9 @@
 }
 
 .navbar-container .input {
-  height: 70%;
-  width: 60%;
-  background-color: rgb(217, 70, 239,.1);
+  height: 60%;
+  width: 30%;
+  background-color: white;
   border-radius: 0.5rem;
   display: flex;
   overflow: hidden;
@@ -30,29 +85,33 @@
 
 }
 
-.input input,
+.navbar-container .input input,
 button {
   border: none;
   background-color: transparent;
 }
 
-.input input {
-  flex-grow: 5;
+.navbar-container .input input {
+  flex-grow: 1;
   outline: none;
   font-size: inherit;
 }
 
-.input input::placeholder {
+.navbar-container .input input::placeholder {
   font-size: inherit;
 }
 
 .input button {
-  flex-grow: 1;
   -webkit-text-stroke: 1px;
 }
 
-.input button i {
-  font-size: 1.1rem;
+.navbar-container .input button i {
+  font-size: 1rem;
   float: right;
   cursor: pointer;
+}
+
+.user i{
+  font-size: 1.5rem;
+
 }

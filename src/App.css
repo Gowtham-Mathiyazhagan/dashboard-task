@@ -53,12 +53,12 @@ html {
 }
 
 main{
-  display: grid;
+  /* display: grid;
   grid-template-areas: 
-  "aside nav nav"
+  "nav nav nav"
   "aside content content"
-  ;
-  grid-template-columns:13rem 1fr 1fr ;
-  grid-template-rows: 4rem 1fr;
+  ; */
+  /* grid-template-columns:13rem 1fr 1fr ;
+  grid-template-rows: 4rem 1fr; */
 }
  

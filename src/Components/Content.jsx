@@ -7,7 +7,11 @@ import save from "../assets/images/save.svg";
 import bubble from "../assets/images/bubble.svg";
 import connect from "../assets/images/connect.svg";
 import Chart from "react-apexcharts";
+import { useToggle } from "./ContextProvider";
 const Content = () => {
+
+  const toggleVal = useToggle()
+
   const [state, setState] = useState({
     series: [
       {
@@ -74,7 +78,7 @@ const Content = () => {
     },
   });
   return (
-    <div className="content-container">
+    <div className="content-container" style={toggleVal.toggle ? {width:"calc(100% - 14rem)", float:"right"}:null}>
       <About />
 	  <div className="chart">
 		<div className="title">

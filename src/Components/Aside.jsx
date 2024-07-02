@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "../assets/css/aside.css";
 import { Link } from "react-router-dom";
+import { useToggle } from "./ContextProvider";
 
 const Aside = () => {
   const [active, setActive] = useState(1);
+  const toggleVal = useToggle()
   const handleClick = (e) => {
     if (e.target.tagName === "A") {
       setActive(Number(e.target.className));
@@ -11,7 +13,7 @@ const Aside = () => {
   };
 
   return (
-    <aside className="aside-container" onClick={handleClick}>
+    <aside className="aside-container" style={toggleVal.toggle ? {left : "0"} : {left : "-50%"}} onClick={handleClick}>
       <ul className="products">
         <li className="title">
           <h4>home</h4>
