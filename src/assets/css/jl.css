@@ -1,0 +1,45 @@
+.jl-container {
+  margin-top: 6rem;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.jl-container .column {
+  display: flex;
+  gap: 2rem;
+  /* align-items: center; */
+}
+.jl-container .column .input-group {
+  height: 2rem;
+  width: 200px;
+  position: relative;
+}
+
+.jl-container .column select {
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+.jl-container .placeholder {
+  position: absolute;
+  top: 0.4rem;
+  left: 1rem;
+  font-size: 0.8rem;
+  pointer-events: none;
+  transition: 0.2s linear;
+  padding: 0 5px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.jl-container .input-group input:focus ~ .placeholder,
+.jl-container .input-group input:valid ~ .placeholder {
+  top: -10px;
+  font-size: 0.7rem;
+  background-color: var(--white);
+}

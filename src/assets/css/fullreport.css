@@ -1,0 +1,47 @@
+.fullreport-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 6rem;
+  }
+  
+  
+  
+  .fullreport-container .table .t-head {
+	height: 3rem;
+	width: 900px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-transform: uppercase;
+	background-color: var(--dark-blue);
+	color: var(--white);
+	font-size: 0.9rem;
+  }
+  
+  .table .t-head .head {
+	width: 50px;
+	text-align: center;
+  }
+  .fullreport-container .table .t-data {
+	height: 3rem;
+	width: 900px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	border-bottom: 1px solid var(--dark-blue);
+  }
+  .table .t-data .data {
+	width: 50px;
+	text-align: center;
+	font-size: 0.8rem;
+  }
+  .table .t-data .data i {
+	cursor: pointer;
+	font-size: 1.2rem;
+	background-color: var(--hover);
+	padding: 8px 10px;
+	border-radius: 50%;
+  }
+  
