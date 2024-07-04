@@ -8,6 +8,7 @@ import bubble from "../assets/images/bubble.svg";
 import connect from "../assets/images/connect.svg";
 import Chart from "react-apexcharts";
 import { useToggle } from "./ContextProvider";
+
 const Content = () => {
 
   const toggleVal = useToggle()
@@ -93,6 +94,7 @@ const Content = () => {
 		width="1000"
       />
 	  </div>
+   
     </div>
   );
 };

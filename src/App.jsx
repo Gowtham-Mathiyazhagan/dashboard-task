@@ -8,6 +8,10 @@ import ViweResource from "./Components/ViweResource.jsx";
 import Jl from "./Components/Jl.jsx";
 import Track from "./Components/Track.jsx";
 import { FullReport } from "./Components/FullReport.jsx";
+import Login from "./Components/Login.jsx";
+import Navbar from "./Components/Navbar.jsx";
+import SignUp from "./Components/Signup.jsx";
+import ForgotPassword from "./Components/ForgotPassword.jsx";
 
 const App = () => {
   return (
@@ -15,7 +19,34 @@ const App = () => {
       <main>
         <Routes>
           <Route
-            path="/"
+          path="/"
+          element={
+            <>
+            <Navbar/>
+            <Login/>
+            </>
+          }
+          />
+          <Route
+          path="/signup"
+          element={
+            <>
+            <Navbar/>
+            <SignUp/>
+            </>
+          }
+          />
+          <Route
+          path="/forgotpassword"
+          element={
+            <>
+            <Navbar/>
+            <ForgotPassword/>
+            </>
+          }
+          />
+          <Route
+            path="/dashboard"
             element={
               <Layout>
                 <Content />
